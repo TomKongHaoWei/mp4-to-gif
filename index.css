@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #0D1117;
+    position: relative;
+}
+
+/* 容器 */
+.container {
+    width: 100%;
+    max-width: 440px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    padding: 30px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === 标题 =============== */
+.title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 38px;
+}
+.tip {
+    padding: 10px 0;
+    color: #888;
+}
+.logo {
+    margin-right: 10px;
+}
+/* === 质量控制 =============== */
+#quality-controls {
+    margin: 10px 0;
+}
+/* === 自定义质量选项 =============== */
+.custom-option-item {
+    margin-bottom: 10px;
+}
+.custom-option-label {
+    display: inline-block;
+    width: 140px;
+    margin-right: 10px;
+    text-align: right;
+}
+.custom-option-container {
+    width: calc(100% - 150px);
+}
+
+.custom-option-container input[type="range"] {
+    width: 80%;
+    display: block;
+}
+
+/* === 自定义文件上传按钮 =============== */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+/* === 下载按钮 =============== */
+#download-btn {
+    display: inline-block;
+    height: 48px;
+    margin: 0 0 0 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #28a745;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#download-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+#result {
+    margin-top: 20px;
+}
+
+.progress {
+    margin: 10px 0;
+}
+
+
+
+.gif-preview {
+    margin-top: 10px;
+    max-width: 100%;
+    border: 1px solid #eee;
+}
